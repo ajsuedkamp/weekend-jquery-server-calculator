@@ -8,7 +8,7 @@ Server Calculator
 -[X] setup express app 
 -[x] setup port to listen on
 -[x] create an html file with 2 input fields
--[x] add 4 buttons for math operations
+-[x] add buttons for math operations and clear
 
 
 ## Description
