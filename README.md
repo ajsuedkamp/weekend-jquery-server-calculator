@@ -9,6 +9,11 @@ Server Calculator
 -[x] setup port to listen on
 -[x] create an html file with 2 input fields
 -[x] add buttons for math operations and clear
+-[x] added click funtions for all math operations
+-[x] created ajax on client side
+-[x] created post app on server
+
+
 
 
 ## Description

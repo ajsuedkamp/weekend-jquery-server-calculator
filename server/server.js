@@ -4,19 +4,17 @@ const port = process.env.PORT || 5000;
 app.use(express.static('server/public'));
 app.use(express.urlencoded());
 
-const equationEntered = [{
-    firstNumber: ,
-    secondNumber: ,
-    operation:
-}]
+const equationParts = [
+    {
+        firstNumber: 0,
+        secondNumber: 0,
+        operator: '+'
+    }
+]
 
-app.post('/answers', (req, res) => {
-    const equation = req.body;
-
+app.post('/equation', (req, res) => {
+    
 });
-
-
-
 
 
 app.listen(port, () => {

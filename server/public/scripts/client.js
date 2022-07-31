@@ -3,30 +3,46 @@ console.log('JS is working');
 $(readyNow);
 
 function readyNow() {
-    console.log('readyNow');
-    $('#equals').on('click', sendAnswerToServer)
-    $('#add').on('click', add);
+    console.log('JQ');
+    $('#add').on('click', addition);
+    $('#subtract').on('click', subtraction);
+    $('#multiply').on('click', multiplication);
+    $('#divide').on('click', division);
+    $('#equals').on('click', sendEquationToServer);
 }
 
+let mathOperator = '';
 
-function sendAnswerToServer() {
+function addition(){
+    mathOperator = '+';
+    console.log(mathOperator);
+}
+
+function subtraction(){
+    mathOperator = '-';
+    console.log(mathOperator);
+}
+
+function multiplication(){
+    mathOperator = '*';
+    console.log(mathOperator);
+}
+
+function division(){
+    mathOperator = '/';
+    console.log(mathOperator);
+}
+
+function sendEquationToServer() {
     $.ajax({
         type: 'POST',
-        url: '/answers',
+        url: '/equation',
         data: {
             firstNumber: $('#number-one').val(),
-            secondNumber: $('number-two').val(),
+            secondNumber: $('#number-two').val(),
+            operator: mathOperator
         }
     })
 }
 
-// working addition function
-// function add() {
-//     let firstNumber = parseInt($('#number-one').val());
-//     let secondNumber = parseInt($('#number-two').val());
-//     let sum = (firstNumber + secondNumber);
-//     $('#answer').append(`
-//         ${sum}
-//     `)
-// }
 
