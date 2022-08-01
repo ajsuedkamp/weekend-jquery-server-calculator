@@ -42,6 +42,8 @@ function sendEquationToServer() {
             secondNumber: $('#number-two').val(),
             operator: mathOperator
         }
+    }).then(function (response) {
+        // getEquations();
     })
 }
 

@@ -12,7 +12,7 @@ Server Calculator
 -[x] added click funtions for all math operations
 -[x] created ajax on client side
 -[x] created post app on server
-
+-[x] added all math operations to post on server
 
 
 
