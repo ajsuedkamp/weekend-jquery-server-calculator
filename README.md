@@ -13,6 +13,7 @@ Server Calculator
 -[x] created ajax on client side
 -[x] created post app on server
 -[x] added all math operations to post on server
+-[x] created a get app on server
 
 
 
